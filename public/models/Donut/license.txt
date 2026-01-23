@@ -1,0 +1,8 @@
+Model Information:
+* title:	Game Ready Donut
+* source:	https://sketchfab.com/3d-models/game-ready-donut-4bf212a8f8b04c75ab2c6242515ca01e
+* author:	giovafncreative (https://sketchfab.com/giovafncreative)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
