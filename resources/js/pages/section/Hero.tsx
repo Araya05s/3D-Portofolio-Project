@@ -17,7 +17,7 @@ const Hero = () => {
 
   return (
     <section className='min-h-screen flex flex-col relative'>
-        <div className="w-full mx-auto flex flex-col sm:mt36 mt-20 px-5 sm:px-10 gap-3">
+        <div className="absolute inset-0 sm:mt36 mt-20 px-5 sm:px-10 gap-3 bg-linear-to-b from-[#0E1117]/0 via-[#0E1117]/80 to-[#2A1E3F]">
             <h1 className="sm:text-3xl text-xl text-white font-medium text-center font-generalsans">Hi, I am Aray <span className="waving-hand">👋</span></h1>
             <p className="sm:text-4xl text-2xl text-neutral-300 font-extrabold text-center font-generalsans">Crafting experiences where code meets motion.</p>
         </div>
