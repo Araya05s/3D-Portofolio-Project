@@ -2,7 +2,7 @@ import React from 'react'
 
 const projects = [
     {
-      title: "Qibla",
+      title: "Qibla Compass",
       description:
         "A compass-based mobile application designed to help users accurately determine the Qibla direction.",
       tech: ["Kotlin", "Android Studio", "Figma"],
@@ -41,7 +41,6 @@ const Projects = () => {
             key={project.title}
             className="flex flex-col sm:flex-row gap-8 p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-300 hover:border-purple-400/40"
         >
-            {/* Image */}
             <div className="w-full sm:w-64 h-40 rounded-xl overflow-hidden bg-black/20 shrink-0">
             <img
                 src={project.image}
@@ -50,18 +49,15 @@ const Projects = () => {
             />
             </div>
 
-            {/* Content */}
             <div className="flex flex-col flex-1 gap-3">
             <h3 className="font-generalsans text-lg sm:text-xl text-white">
                 {project.title}
             </h3>
 
-            {/* Description with limit */}
             <p className="text-sm text-white/70 line-clamp-3">
                 {project.description}
             </p>
 
-            {/* Tech stack */}
             <div className="flex flex-wrap gap-2 mt-1">
                 {project.tech.map((item) => (
                 <span
@@ -73,7 +69,6 @@ const Projects = () => {
                 ))}
             </div>
 
-            {/* Project link */}
             <a
                 href={project.link}
                 target="_blank"
