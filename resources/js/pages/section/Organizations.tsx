@@ -2,18 +2,26 @@ import React from 'react'
 
 const organization = [
   {
-    title: "Moderator at PKKMB Ilmu Komputer 2024",
+    title: "Public Relations, Publication, and Documentation division at New Member Orientation",
     description:
-      "A compass-based mobile application designed to help users accurately determine the Qibla direction.",
-    organizations: ["BEMP Ilmu Komputer UNJ"],
+      "Managed event communications, visual publications, and documentation, ensuring clear information and consistent public-facing materials throughout the Robotic Club orientation program.",
+    organizations: ["Robotic Club"],
     image: "/images/null.png",
     link: "",
   },
   {
-    title: "KKI 2024",
+    title: "Registration Division at Eletronic Robotic Competition",
     description:
-      "A concept e-commerce platform showcasing technology products with a clean layout and user-focused browsing experience.",
+      "Handled participant registration, data verification, and on-site coordination at over 100 candidates to ensure accurate records and smooth event flow during the competition.",
     organizations: ["Robotic Club"],
+    image: "/images/null.png",
+    link: "",
+  },
+  {
+    title: "Moderator at PKKMB Ilmu Komputer 2024",
+    description:
+      "Moderated orientation sessions by guiding discussions, managing time, and maintaining clear communication between speakers and participants at PKKMB Ilmu Komputer 2024.",
+    organizations: ["BEMP Ilmu Komputer UNJ"],
     image: "/images/null.png",
     link: "",
   },
@@ -29,24 +37,24 @@ const Organizations = () => {
         {organization.map((organization) => (
         <div
             key={organization.title}
-            className="flex flex-row gap-8 p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-300 hover:border-purple-400/40"
+            className="max-w-82 flex flex-col gap-8 p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-300 hover:border-purple-400/40"
         >
             <div className="w-full sm:w-64 h-40 rounded-xl overflow-hidden bg-black/20 shrink-0">
-            <img
-                src={organization.image}
-                alt={organization.title}
-                className="w-full h-full object-cover"
-            />
+              <img
+                  src={organization.image}
+                  alt={organization.title}
+                  className="w-full h-full object-cover"
+              />
             </div>
 
             <div className="flex flex-col flex-1 gap-3">
-            <h3 className="font-generalsans text-lg sm:text-xl text-white">
-                {organization.title}
-            </h3>
+              <h3 className="font-generalsans text-lg sm:text-xl text-white">
+                  {organization.title}
+              </h3>
 
-            <p className="text-sm text-white/70 line-clamp-3">
-                {organization.description}
-            </p>
+              <p className="text-sm text-white/70 line-clamp-3">
+                  {organization.description}
+              </p>
 
             <div className="flex flex-wrap gap-2 mt-1">
                 {organization.organizations.map((item) => (

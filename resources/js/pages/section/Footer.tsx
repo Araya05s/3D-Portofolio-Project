@@ -10,10 +10,24 @@ const connections = [
 const Footer = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center relative">
-      <div className="absolute inset-0 pt-60 px-5 sm:px-10 gap-1  bg-slate-950 pointer-events-none transition-colors duration-700 align-middle justify-center">
+      <div className="absolute inset-0 pt-40 px-5 sm:px-10 gap-1  bg-slate-950 align-middle items-center justify-center">
+          <h1 className="sm:text-3xl text-xl text-white font-bold text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">Curriculum Vitae</h1>
+          <div
+            className="flex flex-col align-center justify-center text-center sm:flex-row gap-8 p-8"
+        >
+          <a
+            href="https://drive.google.com/file/d/1drr4eTFQWOkjRl_M6szAZoI7XQ_tdJAQ/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative mt-4 mb-24 w-fit px-5 py-2 text-center rounded-lg text-sm font-generalsans text-white overflow-hidden group inline-flex items-center justify-center font-bold transition-all duration-300 ease-out bg-linear-to-br from-purple-600 to-indigo-600 hover:scale-110 hover:rotate-1 active:scale-95 hover:shadow-[0_20px_50px_rgba(147,51,234,0.3)]"
+          >
+            <span className="absolute inset-0 align-middle justify-center bg-gradient-to from-purple-500/0 via-purple-500/40 to-purple-500/0 translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+            <span className="relative z-10">Check out My resume!</span>
+          </a>
+        </div>
           <h1 className="sm:text-3xl text-xl text-white font-bold text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">Connect with Me!</h1>
       </div>
-      <div className="flex flex-wrap justify-center gap-6 px-6 max-w-5xl mx-auto">
+      <div className="flex flex-wrap mt-88 justify-center gap-6 px-6 max-w-5xl mx-auto">
       {connections.map((skill) => (
             <div
               key={skill.name}
