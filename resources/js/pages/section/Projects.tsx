@@ -2,29 +2,29 @@ import React from 'react'
 
 const projects = [
     {
-      title: "Qibla Compass",
+      title: "Kiblatku",
       description:
-        "A compass-based mobile application designed to help users accurately determine the Qibla direction.",
+        "A compass-based mobile application made by team of 4 CS students designed to help users accurately determine the Qibla direction.",
       tech: ["Kotlin", "Android Studio", "Figma"],
-      image: "/images/null.png",
+      image: "/images/kiblatku.jpg",
       link: "",
     },
     {
-      title: "Nextech E-Commerce",
+      title: "Nextech",
       description:
-        "A concept e-commerce platform showcasing technology products with a clean layout and user-focused browsing experience.",
-      tech: ["PHP", "HTML", "CSS", "Bootstrap", "Visual Studio Code"],
-      image: "/images/null.png",
+        "An E-Commerce web application built with PHP with comprehensive shopping experience for users, a dashboard for administrators, and Midtrans integrated payment gateway for transactions.",
+      tech: ["MySQL", "PHP", "Figma"],
+      image: "/images/nextech.png",
       link: "",
     },
     {
-        title: "Jakarta City Info App",
-        description:
-          "A city guide web app that presents key places, services, and information about Jakarta in a clear and accessible format.",
-        tech: ["Kotlin", "Android Studio"],
-        image: "/images/null.png",
-        link: "",
-      },
+      title: "Skill Nova",
+      description:
+        "An Education mobile application built with Flutter with interactive learning experience for users, clear tabs for easy access, and real-time score update for each lessons done.",
+      tech: ["Flutter", "Figma"],
+      image: "/images/Skill_Nova.png",
+      link: "",
+    },
   ]
   
 
@@ -35,7 +35,7 @@ const Projects = () => {
             <h1 className="sm:text-3xl text-xl text-white font-bold text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">Projects</h1>
         </div>
 
-        <div className="flex flex-col gap-12 pt-42 max-w-6xl mx-auto">
+        <div className="flex flex-col justify-start align-top gap-12 max-w-6xl mx-auto pt-38">
         {projects.map((project) => (
         <div
             key={project.title}
