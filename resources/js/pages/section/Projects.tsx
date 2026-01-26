@@ -7,7 +7,7 @@ const projects = [
         "A compass-based mobile application made by team of 4 CS students designed to help users accurately determine the Qibla direction.",
       tech: ["Kotlin", "Android Studio", "Figma"],
       image: "/images/kiblatku.jpg",
-      link: "",
+      link: "https://github.com/Araya05s",
     },
     {
       title: "Nextech",
@@ -15,7 +15,7 @@ const projects = [
         "An E-Commerce web application built with PHP with comprehensive shopping experience for users, a dashboard for administrators, and Midtrans integrated payment gateway for transactions.",
       tech: ["MySQL", "PHP", "Figma"],
       image: "/images/nextech.png",
-      link: "",
+      link: "https://github.com/Araya05s",
     },
     {
       title: "Skill Nova",
@@ -23,7 +23,7 @@ const projects = [
         "An Education mobile application built with Flutter with interactive learning experience for users, clear tabs for easy access, and real-time score update for each lessons done.",
       tech: ["Flutter", "Figma"],
       image: "/images/Skill_Nova.png",
-      link: "",
+      link: "https://github.com/Araya05s",
     },
   ]
   
@@ -35,7 +35,7 @@ const Projects = () => {
             <h1 className="sm:text-3xl text-xl text-white font-bold text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">Projects</h1>
         </div>
 
-        <div className="flex flex-col justify-start align-top gap-12 max-w-6xl mx-auto pt-38">
+        <div className="flex flex-col justify-start align-top gap-12 max-w-6xl mx-auto pt-38 lg:pb-10 pb-35">
         {projects.map((project) => (
         <div
             key={project.title}

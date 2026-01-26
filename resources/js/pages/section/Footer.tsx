@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
           <h1 className="sm:text-3xl text-xl text-white font-bold text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">Connect with Me!</h1>
       </div>
-      <div className="flex flex-wrap mt-88 justify-center gap-6 px-6 max-w-5xl mx-auto">
+      <div className="pt-32 lg:pt-2 flex flex-wrap mt-88 justify-center gap-6 px-6 max-w-5xl mx-auto">
       {connections.map((skill) => (
             <div
               key={skill.name}

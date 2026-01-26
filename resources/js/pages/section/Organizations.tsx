@@ -55,25 +55,27 @@ const Organizations = () => {
             className='w-full overflow-hidden'
             >
               <div className="flex flex-row pt-12 gap-12 max-w-6xl mx-auto">
-                <Swiper
-                modules={[Autoplay]}
-                slidesPerView="auto"
-                spaceBetween={24}
-                loop={true}
-                speed={6000}
-                autoplay={{
-                  delay: 0,
-                  disableOnInteraction: false,
-                }}
-                allowTouchMove={true}
-                className="w-full"
+              <Swiper
+              modules={[Autoplay]}
+              slidesPerView="auto"
+              spaceBetween={24}
+              loop={true}
+              speed={3000}
+              allowTouchMove={true}
+              grabCursor={true}
+              autoplay={{
+                delay: 500,
+                disableOnInteraction: true,
+                pauseOnMouseEnter: true,
+              }}
+              className="w-full"
               >
                 {organization.map((organization) => (
                   <SwiperSlide
                       key={organization.title}
-                      className="max-w-82 flex flex-col gap-8 p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-300 hover:border-purple-400/40"
+                      className="max-w-82 flex flex-col gap-8 p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-300 hover:border-purple-400/40 overflow-hidden"
                   >
-                      <div className="group w-64 sm:w-64 h-40 rounded-lg overflow-hidden bg-black/20">
+                      <div className="group w-44 lg:w-64 h-40 rounded-lg overflow-hidden bg-black/20 mb-5">
                         <img
                             src={organization.image}
                             alt={organization.title}

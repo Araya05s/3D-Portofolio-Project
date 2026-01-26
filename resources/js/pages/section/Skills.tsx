@@ -17,10 +17,10 @@ const skills = [
 const Skills = () => {
   return (
     <section className='min-h-screen flex flex-col relative'>
-        <div className="absolute inset-0 pt-30 px-5 sm:px-10 gap-1 bg-[#2A1E3F] pointer-events-none transition-colors duration-700 align-middle justify-center">
+        <div className="absolute inset-0 lg:pt-30 pt-10 px-5 lg:px-10  gap-1 bg-[#2A1E3F] pointer-events-none transition-colors duration-700 align-middle justify-center">
             <h1 className="sm:text-3xl text-xl text-white font-bold text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">Skills</h1>
         </div>
-        <div className="mt-50 flex flex-wrap justify-center gap-6 px-6 max-w-5xl mx-auto">
+        <div className="lg:mt-50 mt-25 pb-10 lg:pb-0 flex flex-wrap justify-center gap-6 px-6 max-w-5xl mx-auto">
   {skills.map((skill) => (
         <div
           key={skill.name}
