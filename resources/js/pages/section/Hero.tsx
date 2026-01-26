@@ -15,7 +15,7 @@ import { Typewriter } from 'react-simple-typewriter'
 
 const Hero = () => {
 
-  const isMobile = useMediaQuery({maxWidth: 768});  
+  // const isMobile = useMediaQuery({maxWidth: 768});  
 
   return (
     <section className='min-h-screen flex flex-col relative'>
