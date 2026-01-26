@@ -1,0 +1,19 @@
+{
+    "home": {
+      "name": "Muhammad Akhsan Araya Choirunnas",
+      "headline": "Hi, I'm Aray",
+      "subheadline": [
+        "modern web apps",
+        "interactive UIs",
+        "3D experiences",
+        "clean frontend architecture"
+        ]
+    },
+  
+    "about": {
+      "title": "About Me",
+      "paragraphs": [
+        "I’m a fifth-semester student majoring in Computer Science with expertise in Web Development, Kotlin & Blender. As someone passionate about handling multiple tasks, I possess strong problem-solving skills and learn new software quickly. I am highly enthusiastic about contributing to meaningful projects to continue learning and develop industry-ready skills in a professional environment."
+      ]
+    }
+  }

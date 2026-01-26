@@ -1,33 +1,8 @@
 import React from 'react'
+import site from "@/data/projects.json"
 
-const projects = [
-    {
-      title: "Kiblatku",
-      description:
-        "A compass-based mobile application made by team of 4 CS students designed to help users accurately determine the Qibla direction.",
-      tech: ["Kotlin", "Android Studio", "Figma"],
-      image: "/images/kiblatku.jpg",
-      link: "https://github.com/Araya05s",
-    },
-    {
-      title: "Nextech",
-      description:
-        "An E-Commerce web application built with PHP with comprehensive shopping experience for users, a dashboard for administrators, and Midtrans integrated payment gateway for transactions.",
-      tech: ["MySQL", "PHP", "Figma"],
-      image: "/images/nextech.png",
-      link: "https://github.com/Araya05s",
-    },
-    {
-      title: "Skill Nova",
-      description:
-        "An Education mobile application built with Flutter with interactive learning experience for users, clear tabs for easy access, and real-time score update for each lessons done.",
-      tech: ["Flutter", "Figma"],
-      image: "/images/Skill_Nova.png",
-      link: "https://github.com/Araya05s",
-    },
-  ]
+const projects = site.projects
   
-
 const Projects = () => {
   return (
     <section id="projects" className="min-h-screen flex flex-col justify-center relative">

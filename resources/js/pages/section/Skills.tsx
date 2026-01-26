@@ -1,18 +1,9 @@
 import React from 'react'
 
-const skills = [
-    { name: "HTML", icon: "/icons/html-5.svg" },
-    { name: "CSS", icon: "/icons/css-3.svg" },
-    { name: "Javascript", icon: "/icons/js.svg" },
-    { name: "C++", icon: "/icons/cpp3.svg" },
-    { name: "Python", icon: "/icons/python.svg" },
-    { name: "Kotlin", icon: "/icons/kotlin.svg" },
-    { name: "Three.js", icon: "/icons/three-js.svg" },
-    { name: "React.js", icon: "/icons/react.svg" },
-    { name: "Laravel", icon: "/icons/laravel.svg" },
-    { name: "Blender", icon: "/icons/blender.svg" },
-    { name: "VS Code", icon: "/icons/vs-code.svg" },
-  ];
+import site from "@/data/skills.json"
+
+
+const skills = site.skills
 
 const Skills = () => {
   return (

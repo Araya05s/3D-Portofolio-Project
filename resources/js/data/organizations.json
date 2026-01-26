@@ -1,0 +1,44 @@
+{
+    "organizations": [
+        {
+            "title": "Technical Operator at Final Board Meeting 2025",
+            "description":
+              "Managed live hybrid meeting systems and handled technical coordination to ensured smooth execution of final organizational deliberations.",
+            "organizations": ["Robotic Club"],
+            "image": "/images/RAK_2025.jpg",
+            "link": ""
+          },
+          {
+            "title": "Public Relations, Publication, and Documentation division at New Member Orientation 2024",
+            "description":
+              "Managed event communications, visual publications, and documentation, ensuring clear information and consistent public-facing materials throughout the Robotic Club orientation program.",
+            "organizations": ["Robotic Club"],
+            "image": "/images/PPD_NMO_RCU_2024.jpg",
+            "link": ""
+          },
+          {
+            "title": "Registration Division at Eletronic Robotic Competition 2024",
+            "description":
+              "Handled participant registration, data verification, and on-site coordination at over 100 candidates to ensure accurate records and smooth event flow during the competition.",
+            "organizations": ["Robotic Club"],
+            "image": "/images/EOR_2024.jpg",
+            "link": ""
+          },
+          {
+            "title": "Moderator at PKKMB Ilmu Komputer 2024",
+            "description":
+              "Moderated orientation sessions by guiding discussions, managing time, and maintaining clear communication between speakers and participants at PKKMB Ilmu Komputer 2024.",
+            "organizations": ["BEMP Ilmu Komputer UNJ"],
+            "image": "/images/Moderator_CS_2024.jpg",
+            "link": ""
+          },
+          {
+            "title": "Technical Operator at Technical Meeting Robotic Club UNJ 2024",
+            "description":
+              "Managed presentations and handled technical coordination of the presentations by each groups and divisions in Robotic Club UNJ 2024.",
+            "organizations": ["Robotic Club"],
+            "image": "/images/Technical_Meeting_2024.jpg",
+            "link": ""
+          }
+    ]
+}

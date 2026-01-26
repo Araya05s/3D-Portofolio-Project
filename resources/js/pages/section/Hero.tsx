@@ -11,11 +11,14 @@ import Int_Cube from "@/components/Int_Cube";
 import React_Logo from "@/components/React_Logo";
 import Diamonds from "@/components/Diamonds";
 
+import site from "@/data/profile.json"
+
 import { Typewriter } from 'react-simple-typewriter'
 
 const Hero = () => {
 
   // const isMobile = useMediaQuery({maxWidth: 768});  
+  const { headline, subheadline } = site.home
 
   return (
     <section id="home" className='min-h-screen flex flex-col relative'>
@@ -27,18 +30,10 @@ const Hero = () => {
               <img src="/images/profile_photo.jpg" alt="Profile" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
             </div>
           </div>
-            <h1 className="sm:text-6xl text-xl text-white font-medium text-center font-generalsans">Hi, I am Aray <span className="waving-hand">👋</span></h1>
+            <h1 className="sm:text-6xl text-xl text-white font-medium text-center font-generalsans">{headline} <span className="waving-hand">👋</span></h1>
               <p className="sm:text-4xl text-2xl text-neutral-300 font-extrabold text-center font-generalsans">
               <Typewriter
-                words={[
-                  'Web Developer',
-                  '3D Modeler',
-                  '3D Animator',
-                  'Mobile Developer',
-                  'Full-Stack Developer',
-                  'Front-End Developer',
-                  'Back-End Developer',
-                ]}
+                words={subheadline}
                 loop={0}              
                 cursor
                 cursorStyle="|"

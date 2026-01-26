@@ -3,56 +3,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-const organization = [
-  {
-    title: "Technical Operator at Final Board Meeting 2025",
-    description:
-      "Managed live hybrid meeting systems and handled technical coordination to ensured smooth execution of final organizational deliberations.",
-    organizations: ["Robotic Club"],
-    image: "/images/RAK_2025.jpg",
-    link: "",
-  },
-  {
-    title: "Public Relations, Publication, and Documentation division at New Member Orientation 2024",
-    description:
-      "Managed event communications, visual publications, and documentation, ensuring clear information and consistent public-facing materials throughout the Robotic Club orientation program.",
-    organizations: ["Robotic Club"],
-    image: "/images/PPD_NMO_RCU_2024.jpg",
-    link: "",
-  },
-  {
-    title: "Registration Division at Eletronic Robotic Competition 2024",
-    description:
-      "Handled participant registration, data verification, and on-site coordination at over 100 candidates to ensure accurate records and smooth event flow during the competition.",
-    organizations: ["Robotic Club"],
-    image: "/images/EOR_2024.jpg",
-    link: "",
-  },
-  {
-    title: "Moderator at PKKMB Ilmu Komputer 2024",
-    description:
-      "Moderated orientation sessions by guiding discussions, managing time, and maintaining clear communication between speakers and participants at PKKMB Ilmu Komputer 2024.",
-    organizations: ["BEMP Ilmu Komputer UNJ"],
-    image: "/images/Moderator_CS_2024.jpg",
-    link: "",
-  },
-  {
-    title: "Technical Operator at Technical Meeting Robotic Club UNJ 2024",
-    description:
-      "Managed presentations and handled technical coordination of the presentations by each groups and divisions in Robotic Club UNJ 2024.",
-    organizations: ["Robotic Club"],
-    image: "/images/Technical_Meeting_2024.jpg",
-    link: "",
-  },
-]
+import site from "@/data/organizations.json"
+
+const organization = site.organizations
 
 const Organizations = () => {
   return (
     <section id="organizations" className="min-h-screen flex flex-col justify-center relative">
-       <div className="absolute inset-0 px-5 sm:px-10 gap-1  bg-[#1A1128] pointer-events-none transition-colors duration-700 align-middle justify-center">
+       <div className="absolute inset-0 px-5 sm:px-10 gap-1  bg-[#1A1128] pointer-events-auto sition-colors duration-700 align-middle justify-center">
             <h1 className="sm:text-3xl text-xl text-white font-bold text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">Organizations</h1>
             <div
-            className='w-full overflow-hidden'
+            className='w-full'
             >
               <div className="flex flex-row pt-12 gap-12 max-w-6xl mx-auto">
               <Swiper
