@@ -18,7 +18,7 @@ const Hero = () => {
   // const isMobile = useMediaQuery({maxWidth: 768});  
 
   return (
-    <section className='min-h-screen flex flex-col relative'>
+    <section id="home" className='min-h-screen flex flex-col relative'>
         <div className="absolute inset-0 pt-20 sm:mt36 mt-20 px-5 sm:px-10 gap-3 bg-linear-to-b from-[#0E1117]/0 via-[#0E1117]/80 to-[#2A1E3F]">
           <div className="group relative flex flex-col items-center gap-4 z-10">
           <div className="relative group w-48 h-48 flex items-center justify-center">

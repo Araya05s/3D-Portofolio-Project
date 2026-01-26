@@ -16,7 +16,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className='min-h-screen flex flex-col relative'>
+    <section id="skills" className='min-h-screen flex flex-col relative'>
         <div className="absolute inset-0 lg:pt-30 pt-10 px-5 lg:px-10  gap-1 bg-[#2A1E3F] pointer-events-none transition-colors duration-700 align-middle justify-center">
             <h1 className="sm:text-3xl text-xl text-white font-bold text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">Skills</h1>
         </div>

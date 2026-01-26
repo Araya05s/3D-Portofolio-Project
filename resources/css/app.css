@@ -184,3 +184,7 @@
     display: inline-block;
     animation: loop-move 4s linear infinite;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
