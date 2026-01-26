@@ -1,0 +1,148 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-BeUcocjy.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "name": "app",
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/js/app.tsx": {
+    "file": "assets/app-WDmx9464.js",
+    "name": "app",
+    "src": "resources/js/app.tsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/pages/homepage.tsx",
+      "resources/js/pages/section/About.tsx",
+      "resources/js/pages/section/Education.tsx",
+      "resources/js/pages/section/Footer.tsx",
+      "resources/js/pages/section/Hero.tsx",
+      "resources/js/pages/section/Navbar.tsx",
+      "resources/js/pages/section/Organizations.tsx",
+      "resources/js/pages/section/Projects.tsx",
+      "resources/js/pages/section/Skills.tsx"
+    ],
+    "css": [
+      "assets/app-BeUcocjy.css"
+    ]
+  },
+  "resources/js/pages/homepage.tsx": {
+    "file": "assets/homepage-XqWD1ccS.js",
+    "name": "homepage",
+    "src": "resources/js/pages/homepage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx",
+      "resources/js/pages/section/Hero.tsx",
+      "resources/js/pages/section/Navbar.tsx",
+      "resources/js/pages/section/Skills.tsx",
+      "resources/js/pages/section/Education.tsx",
+      "resources/js/pages/section/Projects.tsx",
+      "resources/js/pages/section/Organizations.tsx",
+      "resources/js/pages/section/Footer.tsx",
+      "resources/js/pages/section/About.tsx"
+    ],
+    "css": [
+      "assets/app-BeUcocjy.css"
+    ]
+  },
+  "resources/js/pages/section/About.tsx": {
+    "file": "assets/About-BVG4Pp-x.js",
+    "name": "About",
+    "src": "resources/js/pages/section/About.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx"
+    ],
+    "css": [
+      "assets/app-BeUcocjy.css"
+    ]
+  },
+  "resources/js/pages/section/Education.tsx": {
+    "file": "assets/Education-BbmIybKV.js",
+    "name": "Education",
+    "src": "resources/js/pages/section/Education.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx"
+    ],
+    "css": [
+      "assets/app-BeUcocjy.css"
+    ]
+  },
+  "resources/js/pages/section/Footer.tsx": {
+    "file": "assets/Footer-BJzskBOE.js",
+    "name": "Footer",
+    "src": "resources/js/pages/section/Footer.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx"
+    ],
+    "css": [
+      "assets/app-BeUcocjy.css"
+    ]
+  },
+  "resources/js/pages/section/Hero.tsx": {
+    "file": "assets/Hero-CTj5F194.js",
+    "name": "Hero",
+    "src": "resources/js/pages/section/Hero.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx"
+    ],
+    "css": [
+      "assets/app-BeUcocjy.css"
+    ]
+  },
+  "resources/js/pages/section/Navbar.tsx": {
+    "file": "assets/Navbar-DvRHLYXX.js",
+    "name": "Navbar",
+    "src": "resources/js/pages/section/Navbar.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx"
+    ],
+    "css": [
+      "assets/app-BeUcocjy.css"
+    ]
+  },
+  "resources/js/pages/section/Organizations.tsx": {
+    "file": "assets/Organizations-BkVy76kN.js",
+    "name": "Organizations",
+    "src": "resources/js/pages/section/Organizations.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx"
+    ],
+    "css": [
+      "assets/Organizations-C8ec8cn4.css",
+      "assets/app-BeUcocjy.css"
+    ]
+  },
+  "resources/js/pages/section/Projects.tsx": {
+    "file": "assets/Projects-DRl-TXDJ.js",
+    "name": "Projects",
+    "src": "resources/js/pages/section/Projects.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx"
+    ],
+    "css": [
+      "assets/app-BeUcocjy.css"
+    ]
+  },
+  "resources/js/pages/section/Skills.tsx": {
+    "file": "assets/Skills-BoJPjwj1.js",
+    "name": "Skills",
+    "src": "resources/js/pages/section/Skills.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx"
+    ],
+    "css": [
+      "assets/app-BeUcocjy.css"
+    ]
+  }
+}

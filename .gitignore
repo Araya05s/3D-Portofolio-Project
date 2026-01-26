@@ -10,6 +10,13 @@
 /storage/*.key
 /storage/pail
 /vendor
+!storage/framework/cache/.gitignore
+!storage/framework/sessions/.gitignore
+!storage/framework/views/.gitignore
+!storage/logs/.gitignore
+public/hot
+public/storage
+bootstrap/cache/*.php
 .DS_Store
 .env
 .env.backup
@@ -26,3 +33,4 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+.vercel
