@@ -17,8 +17,18 @@ const IntroModel = ({ scale = 1, ...props }) => {
 
   return (
     <mesh ref={meshRef} {...props}>
-      <torusGeometry args={[4, 1, 32, 48]} />
-      <meshStandardMaterial color="orange" metalness={0.1} roughness={0.3} emissive="red" emissiveIntensity={0.2} />
+      <mesh position={[0, 0, 0]} rotation={[Math.PI/4, 0, 0]}>
+        <torusGeometry args={[0.5, 0.1, 12, 32]} />
+        <meshPhysicalMaterial color="#9929EA" metalness={0.4} roughness={0.0} />
+      </mesh>
+      <mesh position={[0, 0, 0]} rotation={[0, Math.PI/4, 0]}>
+        <torusGeometry args={[0.35, 0.07, 12, 32]} />
+        <meshPhysicalMaterial color="#FF5FCF" metalness={0.65} roughness={0.0} />
+      </mesh>
+      <mesh position={[0, 0, 0]} rotation={[Math.PI/2, Math.PI/12, 0]}>
+        <torusGeometry args={[0.25, 0.05, 12, 32]} />
+        <meshPhysicalMaterial color="#FAEB92" metalness={0.15} roughness={0.0} />
+      </mesh>
     </mesh>
   );
 };

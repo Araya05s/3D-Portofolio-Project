@@ -25,32 +25,34 @@ const Hero = () => {
     <section id="home" className='min-h-screen flex flex-col relative'>
         <div className="absolute inset-0 pt-20 sm:mt36 mt-20 px-5 sm:px-10 gap-3 bg-linear-to-b from-[#0E1117]/0 via-[#0E1117]/80 to-[#2A1E3F]">
           <div className="group relative flex flex-col items-center gap-4 z-10">
-            <div className="relative group w-48 h-48 flex items-center justify-center">
+            <div className="relative group w-32 h-32 lg:w-48 lg:h-48 flex items-center justify-center">
             <Fade duration={1000}>
             <div className="absolute -inset-2 rounded-full bg-[conic-gradient(from_0deg,#d946ef,#6366f1,#d946ef)] blur-md opacity-70 transition-all duration-500 animate-[spin_6s_linear_infinite] group-hover:animate-[spin_2s_linear_infinite] group-hover:opacity-100 group-hover:blur-xl z-0" />
-              <div className="relative z-10 w-48 h-48 rounded-full overflow-hidden border-2 border-white/20 bg-white/5 backdrop-blur-md transition-all duration-500 group-hover:-translate-y-2 group-hover:border-white/50">
+              <div className="relative z-10 w-32 h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden border-2 border-white/20 bg-white/5 backdrop-blur-md transition-all duration-500 group-hover:-translate-y-2 group-hover:border-white/50">
                 <img src="/images/profile_photo.jpg" alt="Profile" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
               </div>
             </Fade>
             </div>
-            <Fade direction='up' duration={1000} delay={250}>
-              <h1 className="sm:text-6xl text-xl text-white font-medium text-center font-generalsans">{headline} <span className="waving-hand">👋</span></h1>
-              <p className="sm:text-4xl text-2xl text-neutral-300 font-extrabold text-center font-generalsans">
-              <Typewriter
-                words={subheadline}
-                loop={0}              
-                cursor
-                cursorStyle="|"
-                typeSpeed={65}
-                deleteSpeed={50}
-                delaySpeed={2000}
-              />
-              </p>
-            </Fade>
+            <div className='overflow-hidden'>
+              <Fade direction='up' duration={1000} delay={250}>
+                <h1 className="sm:text-6xl text-xl text-white font-medium text-center font-generalsans">{headline} <span className="waving-hand">👋</span></h1>
+                <p className="sm:text-4xl text-2xl text-neutral-300 font-extrabold text-center font-generalsans">
+                <Typewriter
+                  words={subheadline}
+                  loop={0}              
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={75}
+                  deleteSpeed={60}
+                  delaySpeed={2000}
+                />
+                </p>
+              </Fade>
+            </div>
             </div>
           </div>
 
-        <div className="w-full h-full absolute inset-0">
+        <div className="lg:visible w-full h-full absolute inset-0">
           <Canvas className="w-full h-full">
             <Suspense fallback={<CanvasLoader />}>
               <PerspectiveCamera makeDefault position={[0, 0, 28]} />
@@ -66,6 +68,17 @@ const Hero = () => {
                 <React_Logo scale={0.6} position={[-18, 8, 0]} rotation={[-0.1, 0.2, 0]}/>
                 <Diamonds scale={0.9} position={[12, -6, 0]} rotation={[-0.1, 0.2, -2]}/>
               </group>
+            </Suspense>
+          </Canvas>
+        </div>
+
+        <div className="visible lg:hidden w-full h-full absolute inset-0">
+          <Canvas className="w-full h-full">
+            <Suspense fallback={<CanvasLoader />}>
+              <PerspectiveCamera makeDefault position={[0, 0, 28]} />
+              <ambientLight intensity={1.0} />
+              <directionalLight position={[10, 10, 5]} intensity={2} />
+              <IntroModel position={[0, -3, 5]} rotation={[15, 60, 0]} scale={5.0}/>
             </Suspense>
           </Canvas>
         </div>

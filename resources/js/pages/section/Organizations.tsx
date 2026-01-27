@@ -36,7 +36,7 @@ const Organizations = () => {
                       key={organization.title}
                       className="max-w-82 flex flex-col gap-8 p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-300 hover:border-purple-400/40 overflow-hidden"
                   >
-                      <div className="group w-44 lg:w-64 h-40 rounded-lg overflow-hidden bg-black/20 mb-5">
+                      <div className="group w-56 lg:w-64 h-32 rounded-lg overflow-hidden bg-black/20 mb-5">
                         <img
                             src={organization.image}
                             alt={organization.title}

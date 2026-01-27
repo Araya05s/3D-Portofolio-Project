@@ -14,9 +14,9 @@ const Education = () => {
             <h1 className="sm:text-3xl text-xl text-white font-bold text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">Education</h1>
           </Fade>
         </div>
-        <div className="flex flex-col justify-start align-top gap-12 max-w-6xl mx-auto pt-12 lg:pt-20 lg:pb-10 pb-25">
+        <div className="flex flex-col justify-start align-top gap-12 max-w-6xl mx-auto pt-12 lg:pt-20 lg:pb-10 pb-25 overflow-hidden">
         {education.map((edu) => (
-          <Fade direction='left' delay={100} cascade duration={750} fraction={0.07}>
+          <Fade direction='left' delay={100} cascade duration={750}>
             <div
               key={edu.name}
               className="flex flex-col sm:flex-row items-center gap-8 p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-300 hover:border-purple-400/40"

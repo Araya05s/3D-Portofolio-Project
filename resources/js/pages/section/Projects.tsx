@@ -13,9 +13,9 @@ const Projects = () => {
             </Fade>
         </div>
 
-        <div className="flex flex-col justify-start align-top gap-12 max-w-6xl mx-auto pt-38 lg:pb-10 pb-35">
+        <div className="flex flex-col justify-start align-top gap-12 max-w-6xl mx-auto pt-38 lg:pb-10 pb-35 overflow-hidden">
         {projects.map((project) => (
-            <Fade direction='left' delay={100} cascade duration={750} fraction={0.1}>
+            <Fade direction='left' delay={100} cascade duration={750}>
             <div
                 key={project.title}
                 className="flex flex-col sm:flex-row gap-8 p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-300 hover:border-purple-400/40"

@@ -12,20 +12,20 @@ const Footer = () => {
       <div className="absolute inset-0 pt-40 px-5 sm:px-10 gap-1  bg-slate-950 align-middle items-center justify-center">
           <h1 className="sm:text-3xl text-xl text-white font-bold text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">Curriculum Vitae</h1>
           <div
-            className="flex flex-col align-center justify-center text-center sm:flex-row gap-8 p-8"
+            className="flex align-center justify-center text-center flex-row gap-8 p-8"
         >
           <a
             href= {resume_link}
             target="_blank"
             rel="noopener noreferrer"
-            className="relative mt-4 mb-24 w-fit px-5 py-2 text-center rounded-lg text-sm font-generalsans text-white overflow-hidden group inline-flex items-center justify-center font-bold transition-all duration-300 ease-out bg-linear-to-br from-purple-600 to-indigo-600 hover:scale-110 hover:rotate-1 active:scale-95 hover:shadow-[0_20px_50px_rgba(147,51,234,0.3)]"
+            className="relative lg:mt-4 mt-0 mb-24 w-fit px-5 py-2 text-center rounded-lg text-sm font-generalsans text-white overflow-hidden group inline-flex items-center justify-center font-bold transition-all duration-300 ease-out bg-linear-to-br from-purple-600 to-indigo-600 hover:scale-110 hover:rotate-1 active:scale-95 hover:shadow-[0_20px_50px_rgba(147,51,234,0.3)]"
           >
             <span className="absolute inset-0 align-middle justify-center bg-gradient-to from-purple-500/0 via-purple-500/40 to-purple-500/0 translate-x-full group-hover:translate-x-full transition-transform duration-700" />
             <span className="relative z-10">Check out My resume!</span>
           </a>
         </div>
         <Fade duration={1000}>
-          <h1 className="sm:text-3xl text-xl text-white font-bold text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">Connect with Me!</h1>
+          <h1 className="sm:text-3xl lg:pt-32 pt-8 text-xl text-white font-bold text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">Connect with Me!</h1>
         </Fade>
       </div>
       <div className="lg:pt-0 pt-32 flex flex-wrap mt-88 justify-center gap-6 px-6 max-w-6xl mx-auto">

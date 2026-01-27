@@ -8,8 +8,8 @@ export default function Stacks({ scale = 1, position = [0,0,0], rotation = [0,0,
 
     useFrame(({ clock }) => {
       const t = clock.getElapsedTime();
-      stacksRef.current.rotation.x = rotation[0] + Math.sin(t * 0.5) * 0.2;
-      stacksRef.current.rotation.z = rotation[2] + Math.cos(t * 0.5) * 0.2;
+      stacksRef.current.rotation.x = rotation[0] + Math.sin(t * 0.45) * 0.2;
+      stacksRef.current.rotation.z = rotation[2] + Math.cos(t * 0.45) * 0.2;
     });
   
     useEffect(() => {
