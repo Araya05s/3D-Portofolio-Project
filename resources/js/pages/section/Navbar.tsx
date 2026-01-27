@@ -40,7 +40,7 @@ const Navbar = () => {
               </div>
 
               <button onClick={toggleMenu} className='aria-label="Toggle navigation menu" focus:outline-none sm:hidden flex'>
-                <img src={isOpen ? "/public/icons/close.svg" : "/public/icons/menu.svg"} alt="toggle" className='invert brightness-0 w-6 h-6'/>
+                <img src={isOpen ? "/icons/close.svg" : "/icons/menu.svg"} alt="toggle" className='invert brightness-0 w-6 h-6'/>
               </button>
 
               <nav className='lg:flex hidden'>
