@@ -26,8 +26,8 @@ const Organizations = () => {
               grabCursor={true}
               autoplay={{
                 delay: 500,
-                disableOnInteraction: true,
-                pauseOnMouseEnter: true,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
               }}
               className="w-full"
               >
