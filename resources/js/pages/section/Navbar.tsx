@@ -12,7 +12,7 @@ const NavItems = () => {
     { label: "Skills", id: "skills" },
     { label: "Education", id: "education" },
     { label: "Projects", id: "projects" },
-    { label: "Organization", id: "organization" },
+    { label: "Organizations", id: "organizations" },
     { label: "Contact", id: "contact" },
   ].map(({ label, id }) => (
     <li key={id} className="text-neutral-400 hover:text-white text-sm font-semibold transition-colors duration-300">
@@ -39,7 +39,7 @@ const Navbar = () => {
                 </a>
               </div>
 
-              <button onClick={toggleMenu} className='aria-label="Toggle navigation menu" focus:outline-none sm:hidden flex'>
+              <button onClick={toggleMenu} className='aria-label="Toggle navigation menu" focus:outline-none lg:hidden flex'>
                 <img src={isOpen ? "/public/icons/close.svg" : "/public/icons/menu.svg"} alt="toggle" className='invert brightness-0 w-6 h-6'/>
               </button>
 
@@ -48,8 +48,7 @@ const Navbar = () => {
               </nav>
           </div>
       </div>
-      <div className={`absolute left-0 right-0 top-full bg-black text-white z-40 sm:hidden origin-top
-transition-transform duration-300 ease-in-out px-5 sm:px-10 ${isOpen ? 'scale-y-100' : 'scale-y-0'}`}>
+      <div className={`absolute left-0 right-0 top-full bg-black text-white z-40 sm:hidden origin-toptransition-transform duration-300 ease-in-out px-5 sm:px-10 ${isOpen ? 'scale-y-100' : 'scale-y-0'}`}>
         <nav className='py-5'>
           <NavItems />
         </nav>

@@ -10,6 +10,7 @@ import Donut from "@/components/Donut";
 import Int_Cube from "@/components/Int_Cube";
 import React_Logo from "@/components/React_Logo";
 import Diamonds from "@/components/Diamonds";
+import { Fade } from "react-awesome-reveal";
 
 import site from "@/data/profile.json"
 
@@ -24,13 +25,16 @@ const Hero = () => {
     <section id="home" className='min-h-screen flex flex-col relative'>
         <div className="absolute inset-0 pt-20 sm:mt36 mt-20 px-5 sm:px-10 gap-3 bg-linear-to-b from-[#0E1117]/0 via-[#0E1117]/80 to-[#2A1E3F]">
           <div className="group relative flex flex-col items-center gap-4 z-10">
-          <div className="relative group w-48 h-48 flex items-center justify-center">
+            <div className="relative group w-48 h-48 flex items-center justify-center">
+            <Fade duration={1000}>
             <div className="absolute -inset-2 rounded-full bg-[conic-gradient(from_0deg,#d946ef,#6366f1,#d946ef)] blur-md opacity-70 transition-all duration-500 animate-[spin_6s_linear_infinite] group-hover:animate-[spin_2s_linear_infinite] group-hover:opacity-100 group-hover:blur-xl z-0" />
-            <div className="relative z-10 w-48 h-48 rounded-full overflow-hidden border-2 border-white/20 bg-white/5 backdrop-blur-md transition-all duration-500 group-hover:-translate-y-2 group-hover:border-white/50">
-              <img src="/images/profile_photo.jpg" alt="Profile" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <div className="relative z-10 w-48 h-48 rounded-full overflow-hidden border-2 border-white/20 bg-white/5 backdrop-blur-md transition-all duration-500 group-hover:-translate-y-2 group-hover:border-white/50">
+                <img src="/images/profile_photo.jpg" alt="Profile" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              </div>
+            </Fade>
             </div>
-          </div>
-            <h1 className="sm:text-6xl text-xl text-white font-medium text-center font-generalsans">{headline} <span className="waving-hand">👋</span></h1>
+            <Fade direction='up' duration={1000} delay={250}>
+              <h1 className="sm:text-6xl text-xl text-white font-medium text-center font-generalsans">{headline} <span className="waving-hand">👋</span></h1>
               <p className="sm:text-4xl text-2xl text-neutral-300 font-extrabold text-center font-generalsans">
               <Typewriter
                 words={subheadline}
@@ -42,6 +46,7 @@ const Hero = () => {
                 delaySpeed={2000}
               />
               </p>
+            </Fade>
             </div>
           </div>
 

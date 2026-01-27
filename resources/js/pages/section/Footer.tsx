@@ -1,6 +1,7 @@
 import React from 'react'
 
 import site from "@/data/contacts.json"
+import { Fade, Slide } from 'react-awesome-reveal'
 
 const connections = site.contacts
 const resume_link = site['resume-link']
@@ -23,13 +24,16 @@ const Footer = () => {
             <span className="relative z-10">Check out My resume!</span>
           </a>
         </div>
+        <Fade duration={1000}>
           <h1 className="sm:text-3xl text-xl text-white font-bold text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">Connect with Me!</h1>
+        </Fade>
       </div>
-      <div className="pt-32 lg:pt-12 flex flex-wrap mt-88 justify-center gap-6 px-6 max-w-5xl mx-auto">
+      <div className="lg:pt-0 pt-32 flex flex-wrap mt-88 justify-center gap-6 px-6 max-w-6xl mx-auto">
       {connections.map((contact) => (
             <div
               key={contact.name}
             >
+              <Fade direction='up' duration={750} cascade damping={1000} delay={200}>
               <a
                 href={contact.link}
                 target="_blank"
@@ -54,6 +58,7 @@ const Footer = () => {
 
                 <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-linear-to-r from-transparent via-purple-400 to-transparent group-hover:w-full transition-all duration-700" />
                 </a>
+              </Fade>
             </div>
           ))}
         </div>

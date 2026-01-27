@@ -1,0 +1,20 @@
+{
+    "educations": [
+        {
+            "name": "State University of Jakarta",
+            "status": "In Progress",
+            "year": "2023 – Present",
+            "location": "Jl. R.Mangun Muka Raya No.11, RT.11/RW.14, Rawamangun, Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13220",
+            "image": "/images/State_University_of_Jakarta.jpg",
+            "link": "https://unj.ac.id/"
+          },
+          {
+            "name": "SMAN 27 Jakarta",
+            "status": "Graduated",
+            "year": "2020 – 2023",
+            "location": "Jl. Mardani Raya No.39 2, RT.2/RW.5, Johar Baru, Kec. Johar Baru, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10560",
+            "image": "/images/SMAN_27_Jakarta.jpg",
+            "link": "https://sman27jkt.sch.id/"
+          }
+      ]
+}
