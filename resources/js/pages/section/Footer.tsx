@@ -28,7 +28,7 @@ const Footer = () => {
           <h1 className="sm:text-3xl lg:pt-32 pt-8 text-xl text-white font-bold text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">Connect with Me!</h1>
         </Fade>
       </div>
-      <div className="lg:pt-0 pt-32 flex flex-wrap mt-88 justify-center gap-6 px-6 max-w-6xl mx-auto">
+      <div className="lg:pt-8 pt-32 flex flex-wrap mt-88 justify-center gap-6 px-6 max-w-6xl mx-auto">
       {connections.map((contact) => (
             <div
               key={contact.name}

@@ -78,7 +78,7 @@ const Hero = () => {
               <PerspectiveCamera makeDefault position={[0, 0, 28]} />
               <ambientLight intensity={1.0} />
               <directionalLight position={[10, 10, 5]} intensity={2} />
-              <IntroModel position={[0, -3, 5]} rotation={[15, 60, 0]} scale={5.0}/>
+              <IntroModel position={[0, -4, 5]} rotation={[15, 60, 0]} scale={5.0}/>
             </Suspense>
           </Canvas>
         </div>
