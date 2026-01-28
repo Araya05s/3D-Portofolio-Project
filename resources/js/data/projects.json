@@ -4,25 +4,25 @@
             "title": "Kiblatku",
             "description":
               "A compass-based mobile application made by team of 4 CS students designed to help users accurately determine the Qibla direction.",
-            "tech": ["Kotlin", "Android Studio", "Figma"],
+            "tech": ["Kotlin", "Android Studio", "Figma", "Team Project"],
             "image": "/images/kiblatku.jpg",
-            "link": "https://github.com/Araya05s"
+            "link": "https://github.com/DaffaPramudya/uasmocom123"
           },
           {
             "title": "Nextech",
             "description":
               "An E-Commerce web application built with PHP with comprehensive shopping experience for users, a dashboard for administrators, and Midtrans integrated payment gateway for transactions.",
-            "tech": ["MySQL", "PHP", "Figma"],
+            "tech": ["MySQL", "PHP", "Figma", "Team Project"],
             "image": "/images/nextech.png",
-            "link": "https://github.com/Araya05s"
+            "link": "https://github.com/ryantsany/nextechV2"
           },
           {
             "title": "Skill Nova",
             "description":
               "An Education mobile application built with Flutter with interactive learning experience for users, clear tabs for easy access, and real-time score update for each lessons done.",
-            "tech": ["Flutter", "Figma"],
+            "tech": ["Flutter", "Figma", "Team Project"],
             "image": "/images/Skill_Nova.png",
-            "link": "https://github.com/Araya05s"
+            "link": "https://github.com/Araya05s/Skill_Nova"
           }
     ]
 }
