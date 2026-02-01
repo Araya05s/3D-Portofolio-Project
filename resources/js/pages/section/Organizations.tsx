@@ -1,6 +1,6 @@
 import React from 'react'
-import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 import site from "@/data/organizations.json"

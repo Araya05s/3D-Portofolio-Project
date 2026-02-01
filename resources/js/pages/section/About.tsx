@@ -1,11 +1,11 @@
+import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
 import React, { Suspense } from 'react'
 
+import {Fade, Slide } from "react-awesome-reveal";
+import CanvasLoader from "@/components/CanvasLoader";
 import Stacks from "@/components/Stacks";
 import site from "@/data/profile.json"
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
-import CanvasLoader from "@/components/CanvasLoader";
-import {Fade, Slide } from "react-awesome-reveal";
 
 
 const About = () => {

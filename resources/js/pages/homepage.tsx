@@ -1,12 +1,12 @@
 import React from 'react'
+import About from './section/About'
+import Education from './section/Education'
+import Footer from './section/Footer'
 import Hero from './section/Hero'
 import Navbar from './section/Navbar'
-import Skills from './section/Skills'
-import Education from './section/Education'
-import Projects from './section/Projects'
 import Organizations from './section/Organizations'
-import Footer from './section/Footer'
-import About from './section/About'
+import Projects from './section/Projects'
+import Skills from './section/Skills'
 
 
 const homepage = () => {
