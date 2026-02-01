@@ -1,6 +1,6 @@
 import React from 'react'
-import site from "@/data/projects.json"
 import { Fade } from "react-awesome-reveal";
+import site from "@/data/projects.json"
 
 const projects = site.projects
   

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import site from "@/data/contacts.json"
 import { Fade, Slide } from 'react-awesome-reveal'
+import site from "@/data/contacts.json"
 
 const connections = site.contacts
 const resume_link = site['resume-link']

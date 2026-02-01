@@ -1,13 +1,14 @@
+import { Analytics } from '@vercel/analytics/react'
 import React from 'react'
 
-import Navbar from './pages/section/Navbar'
-import Hero from './pages/section/Hero'
-import Skills from './pages/section/Skills'
-import Education from './pages/section/Education'
-import Projects from './pages/section/Projects'
-import Organizations from './pages/section/Organizations'
-import Footer from './pages/section/Footer'
 import About from './pages/section/About'
+import Education from './pages/section/Education'
+import Footer from './pages/section/Footer'
+import Hero from './pages/section/Hero'
+import Navbar from './pages/section/Navbar'
+import Organizations from './pages/section/Organizations'
+import Projects from './pages/section/Projects'
+import Skills from './pages/section/Skills'
 
 
 const homepage = () => {
@@ -21,6 +22,7 @@ const homepage = () => {
       <Education />
       <Organizations />
       <Footer />
+      <Analytics />
     </main>
   )
 }

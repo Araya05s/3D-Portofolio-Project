@@ -1,20 +1,20 @@
+import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import React, { Suspense } from "react";
+import { Fade } from "react-awesome-reveal";
+import { useMediaQuery } from "react-responsive";
+import { Typewriter } from 'react-simple-typewriter'
 import * as THREE from 'three';
 
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import CanvasLoader from "@/components/CanvasLoader";
-import IntroModel from "@/components/IntroModel";
-import { useMediaQuery } from "react-responsive";
+import Diamonds from "@/components/Diamonds";
 import Donut from "@/components/Donut";
 import Int_Cube from "@/components/Int_Cube";
+import IntroModel from "@/components/IntroModel";
 import React_Logo from "@/components/React_Logo";
-import Diamonds from "@/components/Diamonds";
-import { Fade } from "react-awesome-reveal";
 
 import site from "@/data/profile.json"
 
-import { Typewriter } from 'react-simple-typewriter'
 
 const Hero = () => {
 

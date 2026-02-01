@@ -1,7 +1,7 @@
 import React from 'react'
 
-import site from "@/data/education.json"
 import { Fade } from 'react-awesome-reveal'
+import site from "@/data/education.json"
 
 
 const education = site.educations
