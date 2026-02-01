@@ -3,13 +3,17 @@
         { "name": "HTML", "icon": "/icons/html-5.svg" },
         { "name": "CSS", "icon": "/icons/css-3.svg" },
         { "name": "Javascript", "icon": "/icons/js.svg" },
+        { "name": "Typescript", "icon": "/icons/ts.svg" },
         { "name": "C++", "icon": "/icons/cpp3.svg" },
         { "name": "Python", "icon": "/icons/python.svg" },
         { "name": "Kotlin", "icon": "/icons/kotlin.svg" },
         { "name": "Three.js", "icon": "/icons/three-js.svg" },
         { "name": "React.js", "icon": "/icons/react.svg" },
+        { "name": "Vite", "icon": "/icons/vite.svg" },
         { "name": "Laravel", "icon": "/icons/laravel.svg" },
+        { "name": "Figma", "icon": "/icons/figma.svg" },
         { "name": "Blender", "icon": "/icons/blender.svg" },
-        { "name": "VS Code", "icon": "/icons/vs-code.svg" }
+        { "name": "VS Code", "icon": "/icons/vs-code.svg" },
+        { "name": "Android Studio", "icon": "/icons/android_studio.svg" }
     ]
 }
