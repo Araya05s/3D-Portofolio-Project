@@ -25,10 +25,10 @@ const Footer = () => {
           </a>
         </div>
         <Fade duration={1000}>
-          <h1 className="sm:text-3xl lg:pt-32 pt-8 text-xl text-white font-bold text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">Connect with Me!</h1>
+          <h1 className="sm:text-3xl lg:pt-24 md:pt-16 pt-18 text-xl text-white font-bold text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">Connect with Me!</h1>
         </Fade>
       </div>
-      <div className="lg:pt-48 pt-32 flex flex-wrap mt-88 justify-center gap-6 px-6 max-w-6xl mx-auto">
+      <div className="lg:pt-48 pt-32 flex flex-wrap mt-52 lg:mt-88 mb-8 justify-center gap-6 px-6 max-w-6xl mx-auto">
       {connections.map((contact) => (
             <div
               key={contact.name}
@@ -38,7 +38,7 @@ const Footer = () => {
                 href={contact.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative flex items-center gap-4 px-8 py-5 rounded-2xl bg-white/2 border border-white/10 backdrop-blur-md transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-3 hover:bg-white/[0.07] hover:border-purple-500/50 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4),0_0_20px_rgba(168,85,247,0.15)] overflow-hidden"
+                className="group relative flex items-center gap-4 md:px-8 px-2 md:py-5 py:2 rounded-2xl bg-white/2 border border-white/10 backdrop-blur-md transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-3 hover:bg-white/[0.07] hover:border-purple-500/50 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4),0_0_20px_rgba(168,85,247,0.15)] overflow-hidden"
               >
                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out bg-linear-to-r from-transparent via-white/10 to-transparent skew-x-20" />
 
@@ -52,7 +52,7 @@ const Footer = () => {
                   />
                 </div>
 
-                <span className="relative z-10 font-medium text-sm sm:text-base text-slate-300 group-hover:text-white ransition-colors duration-300">
+                <span className="hidden lg:flex relative z-10 font-medium text-sm sm:text-base text-slate-300 group-hover:text-white ransition-colors duration-300">
                   {contact.name}
                 </span>
 
