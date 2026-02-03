@@ -20,11 +20,11 @@ const Projects = () => {
                 key={project.title}
                 className="flex flex-col sm:flex-row gap-8 p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-300 hover:border-purple-400/40"
             >
-                    <div className="w-full sm:w-64 h-40 rounded-xl overflow-hidden bg-black/20 shrink-0">
+                    <div className="w-full sm:w-40 h-40 rounded-xl overflow-hidden bg-black/20 shrink-0">
                     <img
                         src={project.image}
                         alt={project.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-center"
                     />
                     </div>
 
@@ -33,7 +33,7 @@ const Projects = () => {
                             {project.title}
                         </h3>
 
-                        <p className="text-sm text-white/70 line-clamp-3">
+                        <p className="text-sm text-white/70 line-clamp-4">
                             {project.description}
                         </p>
 
