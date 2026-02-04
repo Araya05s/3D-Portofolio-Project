@@ -7,7 +7,7 @@ import Education from './pages/section/Education'
 import Projects from './pages/section/Projects'
 import Organizations from './pages/section/Organizations'
 import Footer from './pages/section/Footer'
-import About from './pages/section/About'
+// import About from './pages/section/About'
 
 
 const homepage = () => {
@@ -15,7 +15,7 @@ const homepage = () => {
     <main className='max-w-10xl mx-auto px-5 sm:px-10'>
       <Navbar />
       <Hero />
-      <About />
+      {/* <About /> */}
       <Skills />
       <Projects />
       <Education />

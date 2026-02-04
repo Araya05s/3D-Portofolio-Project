@@ -6,6 +6,7 @@ import Education from './section/Education'
 import Projects from './section/Projects'
 import Organizations from './section/Organizations'
 import Footer from './section/Footer'
+// import About from './section/About'
 
 
 const homepage = () => {
