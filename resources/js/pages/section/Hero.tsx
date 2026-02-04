@@ -125,6 +125,7 @@ const Hero = () => {
               </Suspense>
             </Canvas>
           </div>
+          <Slide direction='left' duration={1000} delay={500}>
           <div className="flex align-center justify-left text-left flex-row gap-8 pt-4">
               <a
                 href= {resume_link}
@@ -136,6 +137,7 @@ const Hero = () => {
                 <span className="relative z-10">Check out My resume!</span>
               </a>
             </div>
+          </Slide>
         </div>
 
     </section>
