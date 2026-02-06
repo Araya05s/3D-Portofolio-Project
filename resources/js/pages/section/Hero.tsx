@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
+import { useRef, Suspense } from "react";
+import { useFrame, Canvas } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import CanvasLoader from "@/components/CanvasLoader";
 import IntroModel from "@/components/IntroModel";
@@ -99,7 +99,7 @@ const Hero = () => {
             <Canvas className="w-full h-full">
               <Suspense fallback={<CanvasLoader />}>
                 <PerspectiveCamera makeDefault position={[-10, 2, 22]} />
-                <OrbitControls enableZoom={false} />
+                <OrbitControls enableZoom={false} enableDamping={true} enablePan={false}/>
                 <ambientLight intensity={0.5} />
                 <directionalLight position={[10, 10, 5]} intensity={0.5} />
                 <IntroModel position={[0, 0, 0]} rotation={[15, 60, 0]} scale={8}/>
