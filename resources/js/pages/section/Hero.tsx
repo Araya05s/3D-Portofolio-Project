@@ -41,8 +41,8 @@ const Hero = () => {
               </div>
               <div className='overflow-hidden'>
               <Fade direction='up' duration={1000} delay={250}>
-                <h1 className="sm:text-5xl text-xl text-white font-medium text-left font-generalsans">{headline} <span className="waving-hand">👋</span></h1>
-                <p className="sm:text-3xl text-2xl text-neutral-300 font-extrabold text-left font-generalsans">
+                <h1 className="sm:text-4xl text-xl text-white font-medium text-left font-generalsans">{headline} <span className="waving-hand">👋</span></h1>
+                <p className="sm:text-2xl text2xl text-neutral-300 font-extrabold text-left font-generalsans">
                 <Typewriter
                   words={subheadline}
                   loop={0}              
@@ -90,7 +90,7 @@ const Hero = () => {
               <h1 className="lg:mt-6 mt-6 sm:text-3xl text-xl text-white font-bold lg:text-left text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">{title}</h1>
             </Fade>
             <Slide direction='left' duration={750} delay={150}>
-              <p className='lg:max-w-180 w-full lg:pt-6 pt-4 text-justify relative z-10 font-light text-md md:text-lg text-slate-200 font-generalsans'>
+              <p className='lg:max-w-180 w-full lg:pt-6 pt-4 text-justify relative z-10 font-light text-sm md:text-lg sm:text-md text-slate-200 font-generalsans'>
                 {paragraphs}            
               </p>
             </Slide>
@@ -102,7 +102,7 @@ const Hero = () => {
                 <OrbitControls enableZoom={false} enableDamping={true} enablePan={false}/>
                 <ambientLight intensity={0.5} />
                 <directionalLight position={[10, 10, 5]} intensity={0.5} />
-                <IntroModel position={[0, 0, 0]} rotation={[15, 60, 0]} scale={8}/>
+                <IntroModel position={[0, 0, 0]} rotation={[15, 60, 0]} scale={5}/>
 
                 <group> 
                   <directionalLight position={[-10, 10, 5]} intensity={1.75} />
@@ -115,13 +115,13 @@ const Hero = () => {
             </Canvas>
           </div>
           
-            <div className="visible lg:hidden w-full h-full absolute inset-0">
+            <div className="visible lg:hidden w-full h-full absolute inset-0 mb-8">
             <Canvas className="w-full h-full">
               <Suspense fallback={<CanvasLoader />}>
-                <PerspectiveCamera makeDefault position={[0, 0, 28]} />
+                <PerspectiveCamera makeDefault position={[0, 0, 26]} />
                 <ambientLight intensity={1.0} />
                 <directionalLight position={[10, 10, 5]} intensity={2} />
-                <IntroModel position={[0, -6, 5]} rotation={[15, 60, 0]} scale={isMobile? 5.0 : 6.5}/>
+                <IntroModel position={[0, -5.5, 5]} rotation={[15, 60, 0]} scale={isMobile? 3.75 : 4.55}/>
               </Suspense>
             </Canvas>
           </div>
