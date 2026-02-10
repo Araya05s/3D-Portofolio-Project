@@ -19,7 +19,8 @@ import { Typewriter } from 'react-simple-typewriter'
 
 const Hero = () => {
 
-  const isMobile = useMediaQuery({maxWidth: 768});  
+  const isMobileWidth = useMediaQuery({maxWidth: 768});  
+  const isMobileHeight = useMediaQuery({maxHeight: 768});  
   const { headline, subheadline } = site_p.home
   const { title, paragraphs } = site_p.about
   const resume_link = site_c['resume-link']
@@ -102,7 +103,7 @@ const Hero = () => {
                 <OrbitControls enableZoom={false} enableDamping={true} enablePan={false}/>
                 <ambientLight intensity={0.5} />
                 <directionalLight position={[10, 10, 5]} intensity={0.5} />
-                <IntroModel position={[0, 0, 0]} rotation={[15, 60, 0]} scale={5}/>
+                <IntroModel position={[0, 0, 0]} rotation={[15, 60, 0]} scale={8}/>
 
                 <group> 
                   <directionalLight position={[-10, 10, 5]} intensity={1.75} />
@@ -115,13 +116,13 @@ const Hero = () => {
             </Canvas>
           </div>
           
-            <div className="visible lg:hidden w-full h-full absolute inset-0 mb-8">
+            <div className="visible lg:hidden w-full h-full  absolute inset-0 mb-8">
             <Canvas className="w-full h-full">
               <Suspense fallback={<CanvasLoader />}>
                 <PerspectiveCamera makeDefault position={[0, 0, 26]} />
                 <ambientLight intensity={1.0} />
                 <directionalLight position={[10, 10, 5]} intensity={2} />
-                <IntroModel position={[0, -5.5, 5]} rotation={[15, 60, 0]} scale={isMobile? 3.75 : 4.55}/>
+                <IntroModel position={isMobileHeight? [0, -6.5, 5] : [0, -5.7, 5]} rotation={[15, 60, 0]} scale={isMobileWidth? 3.75 : 4.95}/>
               </Suspense>
             </Canvas>
           </div>

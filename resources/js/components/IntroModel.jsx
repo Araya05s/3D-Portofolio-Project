@@ -38,19 +38,19 @@ const IntroModel = ({ scale = 1, ...props }) => {
 
   return (
     <mesh {...props}>
-      <mesh ref={meshRef1} position={[0, 0, 0]} rotation={[Math.PI/4, 0, 0]}>
+      <mesh ref={meshRef1} rotation={[Math.PI/4, 0, 0]}>
         <torusGeometry args={[0.6, 0.035, 12, 42]} />
         <meshPhysicalMaterial color="#6341B4" metalness={0.2} roughness={0.0} />
       </mesh>
-      <mesh ref={meshRef2} position={[0, 0, 0]} rotation={[0, Math.PI/4, 0]}>
+      <mesh ref={meshRef2} rotation={[0, Math.PI/4, 0]}>
         <torusGeometry args={[0.52, 0.065, 12, 32]} />
         <meshPhysicalMaterial color="#9D4DFF" metalness={0.15} roughness={0.3} />
       </mesh>
-      <mesh ref={meshRef3} position={[0, 0, 0]} rotation={[0, Math.PI/4, 0]}>
+      <mesh ref={meshRef3} rotation={[0, Math.PI/4, 0]}>
         <torusGeometry args={[0.34, 0.095, 12, 28]} />
         <meshPhysicalMaterial color="#F85ACA" metalness={0.95} roughness={0.6} />
       </mesh>
-      <mesh ref={meshRef4} position={[0, 0, 0]} rotation={[Math.PI/2, Math.PI/12, 0]}>
+      <mesh ref={meshRef4} rotation={[Math.PI/2, Math.PI/12, 0]}>
         <sphereGeometry args={[0.2, 18, 18]} />
         <meshPhysicalMaterial color="#DAFA8B" metalness={0.05} roughness={0.0} />
       </mesh>
