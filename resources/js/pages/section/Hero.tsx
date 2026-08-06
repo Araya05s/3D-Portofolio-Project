@@ -28,7 +28,7 @@ const Hero = () => {
 
 
   return (
-    <section id="home" className='min-h-screen flex flex-col relative'>
+    <section id="about" className='min-h-screen flex flex-col relative'>
         <div className="pt-20 pb-128 md:pb-24 sm:mt32 mt-12 px-5 sm:px-24 gap-3 bg-linear-to-b from-[#0E1117]/0 via-[#0E1117]/80 to-[#2A1E3F]">
           <div className="relative gap-4 z-10 flex flex-row">
             <div className="relative group w-18 h-18 sm:w-24 sm:h-24 flex items-center justify-center">

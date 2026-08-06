@@ -7,13 +7,12 @@ const NavItems = () => {
   return (
     <ul className='flex flex-col sm:flex-row gap-5 justify-center sm:justify-start'>
       {[
-    { label: "Home", id: "home" },
     { label: "About", id: "about" },
     { label: "Skills", id: "skills" },
     { label: "Education", id: "education" },
     { label: "Projects", id: "projects" },
     { label: "Organizations", id: "organizations" },
-    { label: "Contact", id: "contact" },
+    { label: "Contact", id: "footer" },
   ].map(({ label, id }) => (
     <li key={id} className="text-neutral-400 hover:text-white text-sm font-semibold transition-colors duration-300">
       <a href={`#${id}`} className="cursor-pointer">{label}</a>
@@ -30,7 +29,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen((prevIsOpen) => !prevIsOpen);
 
   return (
-    <header className='fixed inset-x-0 top-0 z-50 bg-black/90'>
+    <header className='fixed inset-x-0 top-0 z-50 bg-black/90 border-b border-purple-500'>
       <div className='mx-auto max-w-10xl px-4 sm:px-6'>
           <div className='lg:ml-5 ml-5 lg:mr-5 mr-5 flex h-14 items-center justify-between'>
               <div className='text-neutral-400 hover:text-white transition-colors duration-300'>

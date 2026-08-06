@@ -35,8 +35,8 @@
           {
             "title": "Veero Saas Analytics",
             "description":
-              "A high-performance, responsive SaaS analytics platform featuring real-time data visualization filtering with state persistence and modular composable architecture",
-            "tech": ["Typescript", "HTML", "CSS", "Javascript", "Vite", "Solo Project"],
+              "A high-performance and responsive SaaS analytics platform featuring real-time data visualization filtering with state persistence and modular composable architecture",
+            "tech": ["Vue", "CSS", "Typescript", "NUXT.js", "Solo Project"],
             "image": "/images/Veero.png",
             "link": "https://verro-saas-analytics-nuxt.vercel.app"
           }

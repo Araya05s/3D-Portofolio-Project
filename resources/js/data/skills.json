@@ -10,6 +10,7 @@
         { "name": "Flutter", "icon": "/icons/flutter.svg" },
         { "name": "Three.js", "icon": "/icons/three-js.svg" },
         { "name": "React.js", "icon": "/icons/react.svg" },
+        { "name": "Vue.js", "icon": "/icons/vue.svg" },
         { "name": "Vite", "icon": "/icons/vite.svg" },
         { "name": "Laravel", "icon": "/icons/laravel.svg" },
         { "name": "NUXT.JS", "icon": "/icons/nuxt.svg" },
