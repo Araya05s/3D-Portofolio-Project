@@ -12,6 +12,8 @@
         { "name": "React.js", "icon": "/icons/react.svg" },
         { "name": "Vite", "icon": "/icons/vite.svg" },
         { "name": "Laravel", "icon": "/icons/laravel.svg" },
+        { "name": "NUXT.JS", "icon": "/icons/nuxt.svg" },
+        { "name": "airflow", "icon": "/icons/airflow.svg" },
         { "name": "Figma", "icon": "/icons/figma.svg" },
         { "name": "Blender", "icon": "/icons/blender.svg" },
         { "name": "VS Code", "icon": "/icons/vs-code.svg" },

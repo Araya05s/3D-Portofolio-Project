@@ -1,6 +1,4 @@
-import React from 'react'
 import { Fade } from "react-awesome-reveal";
-
 import site from "@/data/skills.json"
 
 
@@ -14,7 +12,7 @@ const Skills = () => {
             <h1 className="sm:text-3xl text-xl text-white font-bold text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">Skills</h1>
           </Fade>
         </div>
-        <div className="lg:mt-50 mt-25 pb-10 lg:pb-0 flex flex-wrap justify-center gap-6 px-6 max-w-5xl mx-auto">
+        <div className="lg:mt-50 mt-25 pb-10 lg:pb-12 flex flex-wrap justify-center gap-6 px-6 max-w-5xl mx-auto">
   {skills.map((skill) => (
         <div
           key={skill.name}

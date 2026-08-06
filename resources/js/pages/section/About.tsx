@@ -1,11 +1,11 @@
+import { PerspectiveCamera } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
 import React, { Suspense } from 'react'
 
+import {Fade, Slide } from "react-awesome-reveal";
+import CanvasLoader from "@/components/CanvasLoader";
 import Stacks from "@/components/Stacks";
 import site from "@/data/profile.json"
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
-import CanvasLoader from "@/components/CanvasLoader";
-import {Fade, Slide } from "react-awesome-reveal";
 
 
 const About = () => {
@@ -22,8 +22,8 @@ const About = () => {
             <PerspectiveCamera makeDefault position={[0, 0, 28]} />
             <ambientLight intensity={0.65} />
             <directionalLight position={[10, 10, 5]} intensity={0.5} />
-            
-            <group> 
+
+            <group>
               <directionalLight position={[-20, 10, 5]} intensity={1.25} />
               <Stacks scale={21.5} position={[-10, 0, 0]} rotation={[-6, 5.0, -10]}/>
             </group>
@@ -36,7 +36,7 @@ const About = () => {
           </Fade>
           <Slide direction='left' duration={750} delay={150}>
             <p className='lg:ml-10 ml-4 lg:w-220 w-60 lg:pt-12 pt-6 text-left relative z-10 font-medium text-sm lg:text-xl text-slate-200'>
-              {paragraphs}            
+              {paragraphs}
             </p>
           </Slide>
         </div>
@@ -48,7 +48,7 @@ const About = () => {
               <directionalLight position={[10, 10, 5]} intensity={0.5} />
               {/* <IntroModel rotation={[15, 60, 0]} scale={isMobile ? 0.9 : 1.0}/> */}
 
-              <group> 
+              <group>
                 <directionalLight position={[-20, 10, 5]} intensity={1.25} />
                 <Stacks scale={12.5} position={[17, 0, 0]} rotation={[-6, 5.0, -10]}/>
               </group>

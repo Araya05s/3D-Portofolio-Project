@@ -30,7 +30,15 @@
               "An AI Image revealer built with Typescript in Vite framework by adding carefully designed color treatment inspired by professional photo editing workflows without any sliders and presets.",
             "tech": ["Typescript", "HTML", "CSS", "Javascript", "Vite", "Solo Project"],
             "image": "/images/NayAI.svg",
-            "link": "https://github.com/Araya05s/NayAI"
+            "link": "https://nay-ai.vercel.app/"
+          },
+          {
+            "title": "Veero Saas Analytics",
+            "description":
+              "An AI Image revealer built with Typescript in Vite framework by adding carefully designed color treatment inspired by professional photo editing workflows without any sliders and presets.",
+            "tech": ["Typescript", "HTML", "CSS", "Javascript", "Vite", "Solo Project"],
+            "image": "/images/Veero.png",
+            "link": "https://verro-saas-analytics-nuxt.vercel.app"
           }
     ]
 }

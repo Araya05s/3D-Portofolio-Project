@@ -1,21 +1,20 @@
-import * as THREE from 'three';
-
-import { useRef, Suspense } from "react";
-import { useFrame, Canvas } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
-import CanvasLoader from "@/components/CanvasLoader";
-import IntroModel from "@/components/IntroModel";
+import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
+import { Fade, Slide } from "react-awesome-reveal";
 import { useMediaQuery } from "react-responsive";
+import { Typewriter } from 'react-simple-typewriter'
+
+import CanvasLoader from "@/components/CanvasLoader";
+import Diamonds from "@/components/Diamonds";
 import Donut from "@/components/Donut";
 import Int_Cube from "@/components/Int_Cube";
+import IntroModel from "@/components/IntroModel";
 import React_Logo from "@/components/React_Logo";
-import Diamonds from "@/components/Diamonds";
-import { Fade, Slide } from "react-awesome-reveal";
 
-import site_p from "@/data/profile.json"
 import site_c from "@/data/contacts.json"
+import site_p from "@/data/profile.json"
 
-import { Typewriter } from 'react-simple-typewriter'
 
 const Hero = () => {
 
@@ -31,12 +30,12 @@ const Hero = () => {
   return (
     <section id="home" className='min-h-screen flex flex-col relative'>
         <div className="absolute inset-0 pt-20 sm:mt32 mt-12 px-5 sm:px-24 gap-3 bg-linear-to-b from-[#0E1117]/0 via-[#0E1117]/80 to-[#2A1E3F]">
-          <div className="group relative gap-4 z-10 flex flex-row">
+          <div className="relative gap-4 z-10 flex flex-row">
             <div className="relative group w-18 h-18 sm:w-24 sm:h-24 flex items-center justify-center">
               <Fade duration={1000}>
                 <div className="absolute -inset-2 rounded-full bg-[conic-gradient(from_0deg,#d946ef,#6366f1,#d946ef)] blur-md opacity-70 transition-all duration-500 animate-[spin_6s_linear_infinite] group-hover:animate-[spin_2s_linear_infinite] group-hover:opacity-100 group-hover:blur-xl z-0" />
-                  <div className="relative z-10 w-18 h-18 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-white/20 bg-white/5 backdrop-blur-md transition-all duration-500 group-hover:-translate-y-2 group-hover:border-white/50">
-                    <img src="/images/profile_photo.jpg" alt="Profile" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                  <div className="relative z-10 w-18 h-18 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-white/20 bg-white/5 backdrop-blur-md transition-all duration-500 group-hover:border-white/50">
+                    <img src="/images/profile_photo.jpg" alt="Profile" className="w-full h-full object-cover transition-transform duration-500" />
                   </div>
                 </Fade>
               </div>

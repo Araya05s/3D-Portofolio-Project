@@ -1,7 +1,7 @@
 import React from 'react'
 
-import site from "@/data/education.json"
 import { Fade } from 'react-awesome-reveal'
+import site from "@/data/education.json"
 
 
 const education = site.educations
@@ -9,12 +9,12 @@ const education = site.educations
 const Education = () => {
   return (
     <section id="education" className="min-h-screen flex flex-col justify-center relative">
-       <div className="absolute inset-0 lg:pt-15 pt-0 px-5 sm:px-10 gap-1  bg-linear-to-b from-slate-950 to-[#1A1128] pointer-events-none transition-colors duration-700 align-middle justify-center">
+       <div className="lg:pt-4 pt-0 px-5 sm:px-10 gap-1 28] pointer-events-none transition-colors duration-700 align-middle justify-center">
           <Fade duration={1000}>
             <h1 className="sm:text-3xl text-xl text-white font-bold text-center underline decoration-purple-500 decoration-4 underline-offset-8 font-generalsans">Education</h1>
           </Fade>
         </div>
-        <div className="flex flex-col justify-start align-top gap-12 max-w-6xl mx-auto pt-12 lg:pt-20 lg:pb-10 pb-25 overflow-hidden">
+        <div className="flex flex-col justify-start align-top gap-12 max-w-6xl mx-auto pt-6 lg:pb-10 pb-25 overflow-hidden">
         {education.map((edu) => (
           <Fade direction='left' delay={100} cascade duration={750}>
             <div

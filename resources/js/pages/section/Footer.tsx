@@ -1,9 +1,9 @@
-import site_p from "@/data/profile.json"
 import site_c from "@/data/contacts.json"
+import site_p from "@/data/profile.json"
 
 const Footer = () => {
 
-  const { name, headline, subheadline } = site_p.home
+  const { name } = site_p.home
   const connections = site_c.contacts
 
   return (
