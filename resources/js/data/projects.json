@@ -35,7 +35,7 @@
           {
             "title": "Veero Saas Analytics",
             "description":
-              "An AI Image revealer built with Typescript in Vite framework by adding carefully designed color treatment inspired by professional photo editing workflows without any sliders and presets.",
+              "A high-performance, responsive SaaS analytics platform featuring real-time data visualization filtering with state persistence and modular composable architecture",
             "tech": ["Typescript", "HTML", "CSS", "Javascript", "Vite", "Solo Project"],
             "image": "/images/Veero.png",
             "link": "https://verro-saas-analytics-nuxt.vercel.app"
